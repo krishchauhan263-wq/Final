@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<audio id="celebration-music" loop>
+    <source src="night-changes.mp3" type="audio/mpeg">
+</audio>
+
+<body>
+    <!-- Background Music (Optional, user initiates) -->
+    <!-- <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI Overlay -->
+        <div id="ui-layer">
+            <div id="score-board">
+                <span>❤️ Love Meter: </span>
+                <div class="progress-bar">
+                    <div id="love-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>Catch the Love!</h1>
+            <p>Catch enough hearts to reveal a special question...</p>
+            <button id="start-btn" class="btn">Start Game</button>
+        </div>
+        <!-- Ready Question Screen -->
+<div id="ready-screen" class="screen hidden">
+    <h1>Are You Ready For My Q uestion? 💭❤️</h1>
+    <p>Take a deep breath… this one is special ✨</p>
+    <button id="ready-btn" class="btn yes-btn">Yes, I’m ready 💖</button>
+</div>
+
+        <!-- Proposal Modal (Hidden initially) -->
+        <div id="proposal-screen" class="screen hidden">
+            <div class="proposal-content">
+                <h1>Will You Be My Valentine?</h1>
+                <p class="sub-text">You caught my heart! Now I have to ask...</p>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn yes-btn">YES!</button>
+                    <button id="no-btn" class="btn no-btn">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Celebration Overlay -->
+        <div id="celebration-screen" class="screen hidden">
+            <h1>Yaeee I Know You Love me 😍😍 </h1>
+            <p id="typed-message"></p>
+        <div id="fail-screen" class="screen hidden">
+    <h1>💔 Oops… You Failed</h1>
+    <p>You caught a bomb 😢  
+    Don’t worry… true love deserves another chance 💞</p>
+    <button id="retry-btn" class="btn">Try Again 🔁</button>
+</div>
+    
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
